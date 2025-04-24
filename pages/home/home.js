@@ -1,8 +1,21 @@
 // pages/home/home.js
 Page({
   data:{
-    array:[]
+    activeTab: 'notice' // 默认选中“通知公告”
   },
+
+  //切换标签
+  switchTab(e) {
+    this.setData({
+        activeTab: e.currenTarget.dataset.tab
+    });
+    if (e.currenTarget.dataset.tab === "notice") {
+        //加载通知公告数据
+    } else {
+        //加载水院要闻数据
+    }
+  },
+
   onLoad:function(options){
     var array = this.initData();
     this.setData({array:array});
@@ -11,8 +24,8 @@ Page({
     var array = [];
     var object1 = new Object();
     object1.img = '../images/list/food-1.jpg';
-    object1.title='爱心早餐';
-    object1.type='健康养生';
+    object1.title='关于拟推荐参加浙江省第十九届“挑战杯”大学生课外学术科技作品竞赛参赛作品公示';
+    object1.type='来源：彭秋伟';
     object1.liulan='20696浏览';
     object1.pinglun='7评论';
     array[0] = object1;
@@ -52,4 +65,4 @@ Page({
     return array;
   }
   
-})
+});

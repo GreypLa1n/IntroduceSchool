@@ -59,3 +59,31 @@
     position: absolute;
     right: 10px;
 }
+/* 标题容器 */
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 15rpx;
+    position: relative;
+  }
+
+/* 单个标题容器 */
+.title-container {
+    margin-right: 30rpx; /* 两个标题之间的间距 */
+  }
+
+/* 基础标题样式 */
+.section-title {
+    color: #666; /* 默认灰色 */
+    font-size: 32rpx;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 8rpx;
+    border-bottom: 4rpx solid transparent; /* 初始无横线 */
+  }
+
+/* 激活状态的标题（蓝色+横线） */
+.section-title.active {
+    color: #00a0e9;
+    border-bottom-color: #00a0e9; /* 显示蓝色横线 */
+  }
