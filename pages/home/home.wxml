@@ -5,19 +5,19 @@
 
   <view class="nav">
      <view class="nav-item">
-        <view> <image src="../images/icon/fenlei.jpg" style="width:25px;height:23px;"></image></view>
+        <view> <image src="../images/icon/anpai.jpg" style="width:25px;height:23px;"></image></view>
         <view>值班安排</view>
      </view>
      <view class="nav-item">
-        <view> <image src="../images/icon/shipin.jpg" style="width:25px;height:23px;"></image></view>
+        <view> <image src="../images/icon/huiyi.jpg" style="width:25px;height:25px;"></image></view>
         <view>会议安排</view>
      </view>
      <view class="nav-item">
-        <view> <image src="../images/icon/meishi.jpg" style="width:25px;height:23px;"></image></view>
+        <view> <image src="../images/icon/banche.png" style="width:25px;height:30px;"></image></view>
         <view>班车预约</view>
      </view>
      <view class="nav-item">
-        <view> <image src="../images/icon/shangou.jpg" style="width:25px;height:23px;"></image></view>
+        <view> <image src="../images/icon/xiugai.webp" style="width:25px;height:23px;"></image></view>
         <view>改内网密码</view>
      </view>
   </view>
@@ -43,8 +43,36 @@
         </view>
     </view>
   </view>   
-  <import src="../template/template" />
-  <view class="list">
-    <template is="cooks" data="{{array}}"/>
+
+  <!-- 内容列表 -->
+  <view class="content-list">
+    <block wx:if="{{activeTab === 'notice'}}">
+      <view wx:for="{{noticeList}}" wx:key="id" class="list-item" bindtap="navigateToDetail" data-id="{{item.id}}">
+        <text class="item-title">{{item.title}}</text>
+        <view class="item-meta">
+          <text class="meta-source">来源：{{item.source}}</text>
+          <text class="meta-date">时间：{{item.date}}</text>
+        </view>
+        <view class="item-divider"></view>
+      </view>
+      <view class="view-more" bindtap="viewMore">
+        <text>更多 ></text>
+      </view>
+    </block>
+
+    <block wx:else>
+      <view wx:for="{{newsList}}" wx:key="id" class="list-item" bindtap="navigateToDetail" data-id="{{item.id}}">
+        <text class="item-title">{{item.title}}</text>
+        <view class="item-meta">
+          <text class="meta-source">来源：{{item.source}}</text>
+          <text class="meta-date">{{item.date}}</text>
+        </view>
+        <view class="item-divider"></view>
+      </view>
+      <view class="view-more" bindtap="viewMore">
+        <text>更多 ></text>
+      </view>
+    </block>
   </view>
+
 </view>

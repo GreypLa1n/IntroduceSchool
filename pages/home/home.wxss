@@ -43,7 +43,9 @@
     line-height: 30px;
 }
 .title{
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .count{
     display: flex;
@@ -86,4 +88,117 @@
 .section-title.active {
     color: #00a0e9;
     border-bottom-color: #00a0e9; /* 显示蓝色横线 */
+  }
+
+
+.subtitle {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
+/* 标签切换栏 */
+.tab-bar {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+.tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+  }
+  
+.tab-item.active {
+    color: #1976D2;
+    font-weight: bold;
+  }
+  
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background-color: #1976D2;
+  }
+  
+/* 内容列表 */
+.content-list {
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+.list-item {
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+.item-title {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #999;
+  }
+  
+.meta-source {
+    margin-right: 15px;
+  }
+  
+.meta-date {
+    color: #666;
+  }
+  
+.item-divider {
+    height: 1px;
+    background-color: #f5f5f5;
+    margin: 10px -15px -5px -15px;
+  }
+  
+/* 更多链接 */
+.view-more {
+    text-align: right;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #1976D2;
+  }
+  
+/* 底部导航 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+  }
+  
+.footer-item {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 5px 0;
+  }
+  
+.footer-item.active {
+    color: #1976D2;
   }
