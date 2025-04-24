@@ -143,7 +143,12 @@
 .content-list {
     background-color: #fff;
     margin-top: 10px;
-  }
+}
+
+.content-swiper {
+    height: 70vh;
+    overflow: hidden;
+}
   
 .list-item {
     padding: 5px;

@@ -29,6 +29,16 @@ Page({
   
     },
   
+    onSwiperChange: function (e) {
+        const currentIndex = e.detail.current;
+        const newTab = currentIndex === 0 ? 'notice' : 'news';
+        if (this.data.activeTab !== newTab) {
+          this.setData({
+            activeTab: newTab
+          });
+        }
+    },
+
     onLoad: function(options) {
       // 页面加载时默认加载通知公告数据
       this.loadNoticeData();
@@ -63,22 +73,31 @@ Page({
             id: 1,
             title: '关于拟推荐参加浙江省第十九届"挑战杯"大学生课外学术科技作品竞赛参赛作品公示',
             source: '彭秋伟',
-            viewcount: '20696浏览',
-            date: '2023-04-15'
+            date: '2025-04-07'
         },
         {
             id: 2,
-            title: '水利学院2023年度优秀教师评选结果公示',
-            source: '教务处',
-            viewcount: '15632浏览',
-            date: '2023-04-10'
+            title: '关于2025年暑期学生参加交流交换项目通知',
+            source: '缪鸥',
+            date: '2025-04-02'
         },
         {
             id: 3,
-            title: '关于举办2023年校园开放日的通知',
-            source: '校办公室',
-            viewcount: '18945浏览',
-            date: '2023-04-05'
+            title: '浙江水利水电学院来华留学生2025年招生简章 ZJWEU 2025 Admissions Guide for International Students',
+            source: '学校官网',
+            date: '2025-03-04'
+        },
+        {
+            id: 4,
+            title: '浙江水利水电学院2025年春季寒假出国（境）交流交换项目通知',
+            source: '傅雪婷',
+            date: '2024-10-30'
+        },
+        {
+            id: 5,
+            title: '【钱江论坛303期】探索未来科技人形机器人的奥秘与魅力',
+            source: '李祯',
+            date: '2024-09-29'
         }
       ];
     },
@@ -87,32 +106,34 @@ Page({
     initNewsData: function() {
       return [
         {
-            id: 101,
-            title: '水利学院成功举办2023年水利科技创新论坛',
-            source: '学院新闻中心',
-            viewcount: '32456浏览',
-            date: '2023-04-18'
+            id: 1,
+            title: '读书节开幕！校长万健寄语学生：三面“镜子”助阅读',
+            source: '徐小梅、周畅',
+            date: '2025-04-24'
         },
         {
-            id: 102,
-            title: '我院学子在全国大学生水利创新设计大赛中荣获特等奖',
-            source: '学工办',
-            viewcount: '28765浏览',
-            date: '2023-04-12'
+            id: 2,
+            title: '校党委书记钱天国会见吉尔吉斯共和国驻华大使一行',
+            source: '裴新平 图：王畅',
+            date: '2025-04-11'
         },
         {
-            id: 103,
-            title: '水利学院与某水利集团签署战略合作协议',
-            source: '院办',
-            viewcount: '24532浏览',
-            date: '2023-04-08'
+            id: 3,
+            title: '学校党委理论学习中心组召开深入贯彻中央八大规定精神学习教育专题学习会',
+            source: '李景龙',
+            date: '2025-04-11'
         },
         {
-            id: 104,
-            title: '水利学院开展"世界水日"系列宣传活动',
-            source: '团委',
-            viewcount: '19876浏览',
-            date: '2023-03-22'
+            id: 4,
+            title: '校长万健一行调研钱塘江北岸海塘安澜工程',
+            source: '',
+            date: '2025-04-11'
+        },
+        {
+            id: 5,
+            title: '学校成功举办中国教育发展战略学会人工智能与机器人教育专委会理事单位授牌仪式暨专题报告会',
+            source: '李幸',
+            date: '2025-04-07'
         }
       ];
     },

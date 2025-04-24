@@ -55,34 +55,49 @@
   </view>   
 
   <!-- 内容列表 -->
-  <view class="content-list">
-    <block wx:if="{{activeTab === 'notice'}}">
-      <view wx:for="{{noticeList}}" wx:key="id" class="list-item" bindtap="navigateToDetail" data-id="{{item.id}}">
-        <text class="item-title">{{item.title}}</text>
-        <view class="item-meta">
-          <text class="meta-source">来源：{{item.source}}</text>
-          <text class="meta-date">时间：{{item.date}}</text>
+  <swiper 
+    class="content-swiper" 
+    current="{{activeTab === 'notice' ? 0 : 1}}" 
+    duration="300" 
+    easing-function="easeOutCubic" 
+    bindchange="onSwiperChange">
+    <!-- 通知公告页 -->
+    <swiper-item>
+        <view class="content-list">
+            <block wx:for="{{noticeList}}" wx:key="id">
+                <view class="list-item" bindtap="navigateToDetail" data-id="{{item.id}}">
+                    <text class="item-title">{{item.title}}</text>
+                    <view class="item-meta">
+                        <text class="meta-source">来源：{{item.source}}</text>
+                        <text class="meta-date">时间：{{item.date}}</text>
+                    </view>
+                    <view class="item-divider"></view>
+                </view>
+            </block>
+            <view class="view-more" bindtap="viewMore">
+                <text>更多 ></text>
+            </view>
         </view>
-        <view class="item-divider"></view>
-      </view>
-      <view class="view-more" bindtap="viewMore">
-        <text>更多 ></text>
-      </view>
-    </block>
+    </swiper-item>
 
-    <block wx:else>
-      <view wx:for="{{newsList}}" wx:key="id" class="list-item" bindtap="navigateToDetail" data-id="{{item.id}}">
-        <text class="item-title">{{item.title}}</text>
-        <view class="item-meta">
-          <text class="meta-source">来源：{{item.source}}</text>
-          <text class="meta-date">{{item.date}}</text>
+    <!-- 水院要闻页 -->
+    <swiper-item>
+        <view class="content-list">
+            <block wx:for="{{newsList}}" wx:key="id">
+                <view class="list-item" bindtap="navigateToDetail" data-id="{{item.id}}">
+                    <text class="item-title">{{item.title}}</text>
+                    <view class="item-meta">
+                        <text class="meta-source">来源：{{item.source}}</text>
+                        <text class="meta-date">时间：{{item.date}}</text>
+                    </view>
+                    <view class="item-divider"></view>
+                </view>
+            </block>
+            <view class="view-more" bindtap="viewMore">
+                <text>更多 ></text>
+            </view>
         </view>
-        <view class="item-divider"></view>
-      </view>
-      <view class="view-more" bindtap="viewMore">
-        <text>更多 ></text>
-      </view>
-    </block>
-  </view>
+    </swiper-item>
+  </swiper>
 
 </view>
