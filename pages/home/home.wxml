@@ -19,15 +19,15 @@
         <view>值班安排</view>
      </view>
      <view class="nav-item">
-        <view> <image src="../images/icon/huiyi.jpg" style="width:25px;height:25px;"></image></view>
+        <view> <image src="../images/icon/huiyi.jpg" style="width:25px;height:23px;"></image></view>
         <view>会议安排</view>
      </view>
      <view class="nav-item">
-        <view> <image src="../images/icon/banche.png" style="width:25px;height:30px;"></image></view>
+        <view> <image src="../images/icon/banche.jpg" style="width:25px;height:23px;"></image></view>
         <view>班车预约</view>
      </view>
      <view class="nav-item">
-        <view> <image src="../images/icon/xiugai.webp" style="width:25px;height:23px;"></image></view>
+        <view> <image src="../images/icon/xiugai.jpg" style="width:25px;height:23px;"></image></view>
         <view>改内网密码</view>
      </view>
   </view>
