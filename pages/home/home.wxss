@@ -1,3 +1,14 @@
+.banner-swiper {
+    width: 100%;
+    height: 230px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .nav{
   display: flex;
   flex-direction: row;

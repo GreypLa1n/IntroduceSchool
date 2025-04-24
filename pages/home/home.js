@@ -3,8 +3,13 @@ Page({
     data: {
       activeTab: 'notice', // 默认选中"通知公告"
       noticeList: [],      // 通知公告数据
-      newsList: [],       // 水院要闻数据
-      isLoading: false    // 加载状态
+      newsList: [],        // 水院要闻数据
+      isLoading: false,    // 加载状态
+      bannerImages: [      // 海报图片
+        '../images/haibao/haibao-1.jpg',
+        '../images/haibao/haibao-2.jpg',
+        '../images/haibao/haibao-3.jpg'
+      ]
     },
   
     // 切换标签
