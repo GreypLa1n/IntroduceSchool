@@ -1,0 +1,17 @@
+/* 放大中间图标 tabbar 样式 */
+.custom-tabbar {
+    position: relative;
+  }
+  
+  .custom-tabbar .service-hall-icon {
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+    top: -30rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/news/news",
+    "pages/Service Hall/Service Hall",
+    "pages/navigation/navigation",
+    "pages/me/me"
+  ], 
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#494949",
+    "navigationBarTitleText": "浙江水利水电学院",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#999999",
+    "selectedColor": "#00a0e9",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/images/tab/home-0.png",
+        "selectedIconPath": "pages/images/tab/home-1.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "pages/images/tab/new-0.png",
+        "selectedIconPath": "pages/images/tab/new-1.png"
+      },
+      {
+        "pagePath": "pages/Service Hall/Service Hall",
+        "text": "服务大厅",
+        "iconPath": "pages/images/tab/xiaohui.png",
+        "selectedIconPath": "pages/images/tab/xiaohui.png"
+      },
+      {
+        "pagePath": "pages/navigation/navigation",
+        "text": "地图导航",
+        "iconPath": "pages/images/tab/navigation-0.jpg",
+        "selectedIconPath": "pages/images/tab/navigation-1.jpg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/images/tab/me-0.png",
+        "selectedIconPath": "pages/images/tab/me-1.png"
+      }
+    ]
+  }
+}
