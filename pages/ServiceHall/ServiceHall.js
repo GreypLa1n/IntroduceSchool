@@ -1,4 +1,4 @@
-// pages/Service Hall/Service Hall.js
+// pages/ServiceHall/ServiceHall.js
 Page({
   data:{},
   onLoad:function(options){

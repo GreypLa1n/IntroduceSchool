@@ -26,7 +26,7 @@
       <text class="label">手机号：</text>
       <view class = "value-with-icon">
         <text class = "value">987654321</text>
-        <image class = "icon" src = "../images/me/phone-1.jpg" />
+        <image class = "icon" src = "../images/me/phone.jpg" />
       </view>
     </view>
     <view class="contact-item">

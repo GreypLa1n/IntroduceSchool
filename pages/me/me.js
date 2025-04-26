@@ -1,7 +1,6 @@
 Page({
     data: {
-      avatarUrl: "pagesimages\\tab\\new-0.png",  // 初始化头像 
-      defaultAvatarUrl: "pages\\images\\tab\\new-0.png",  // 默认头像路径 
+      avatarUrl: "/images/me/me-0.png",  // 初始化头像 
       user: {
         name: "林穗穗",
         gender: "女",
@@ -44,15 +43,6 @@ Page({
         });
     },
 
-    // 恢复默认头像
-    restoreDefaultAvatar: function (){
-        this.setData({
-            avatarUrl: this.data.defaultAvatarUrl
-        });
-
-        wx.setStorageSync('avatarUrl', this.data.defaultAvatarUrl);
-    },
-  
     contactUser: function () {
       // Handle contact logic
     },

@@ -2,7 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/news/news",
-    "pages/Service Hall/Service Hall",
+    "pages/ServiceHall/ServiceHall",
     "pages/navigation/navigation",
     "pages/me/me"
   ], 
@@ -31,7 +31,7 @@
         "selectedIconPath": "pages/images/tab/new-1.png"
       },
       {
-        "pagePath": "pages/Service Hall/Service Hall",
+        "pagePath": "pages/ServiceHall/ServiceHall",
         "text": "服务大厅",
         "iconPath": "pages/images/tab/xiaohui.png",
         "selectedIconPath": "pages/images/tab/xiaohui.png"
